@@ -3,7 +3,7 @@ import { Icon } from '@iconify/react';
 import { socialIcons } from '../../cms/social.data';
 export default function Topbar() {
   return (
-    <div className="bg-lightGreen hidden md:block px-2">
+    <div className="bg-lightGreen hidden md:block px-3 md:px-6">
       <Container className="py-4 text-white flex justify-between items-center">
         <div className="flex items-center text-sm">
           <p className="flex items-center mr-4">
@@ -27,7 +27,12 @@ export default function Topbar() {
         </div>
         <div className="flex items-center">
           {socialIcons.map((s) => (
-            <a key={s.id} href={s.link} target="_blank" className="inline-block text-xl ml-5">
+            <a
+              key={s.id}
+              href={s.link}
+              target="_blank"
+              className="inline-block text-xl ml-5"
+            >
               {s.icon}
             </a>
           ))}

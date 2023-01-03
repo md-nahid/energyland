@@ -9,3 +9,11 @@
     @apply antialiased font-inter;
   }
 }
+
+@layer components {
+  .text-stroke {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #2c2c2c;
+    -webkit-text-fill-color: transparent;
+  }
+}

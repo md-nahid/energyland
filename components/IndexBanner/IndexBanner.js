@@ -31,28 +31,25 @@ export default function IndexBanner() {
               layout="fill"
               className="object-cover absolute opacity-60"
             />
-            <Container className="relative top-1/2 -translate-y-1/2 z-10">
-              <div className="capitalize tracking-widest text-3xl xsm:text-4xl sm:text-5xl md:text-6xl text-white font-bold">
+            <Container className="relative top-1/2 -translate-y-1/2 z-10 text-center">
+              <div className="capitalize tracking-widest text-2xl xs:text-3xl sm:text-5xl md:text-6xl xl:text-8xl text-white font-bold">
                 <h2>{b.title}</h2>
                 <h2>
                   {b.titleTwo} <span className="text-green-400 underline">{b.titleThree}</span>
                 </h2>
               </div>
-              <div className="mt-4 text-sm text-white">
-                <p>{b.subtitle}</p>
+              <div className="mt-5 md:mt-10 text-sm md:text-lg text-white">
                 <p>{b.subtitleTwo}</p>
               </div>
-              <div className="mt-10 sm:flex flex-col sm:flex-row items-center">
+              <div className="grid grid-cols-1 gap-5 mt-5 md:mt-10 px-5 xsm:flex xsm:max-w-lg xsm:m-auto xl:max-w-2xl xsm:mt-5">
                 <LinkButton
                   href={b.linkOne}
                   label={b.linkOneLabel}
                 />
-                <div className="mt-4 sm:mt-0 sm:ml-4 sm:max-w-xs">
-                  <LinkButtonTwo
-                    href={b.linkTwo}
-                    label={b.linkTwoLabel}
-                  />
-                </div>
+                <LinkButtonTwo
+                  href={b.linkTwo}
+                  label={b.linkTwoLabel}
+                />
               </div>
             </Container>
           </SwiperSlide>
